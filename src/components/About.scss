@@ -1,0 +1,107 @@
+.about{
+    padding:40px;
+    height: 100vh;
+    color: white;
+    background-color: #111;
+
+      .container{
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 80%;
+        margin: 0 auto;   
+         .container-content{
+            p{
+                font-weight: 700;
+            }
+            h1{
+                padding: 15px 0 10px 0;
+            }
+            .stripe{
+                height: 2px;
+                width: 80px;
+                background-color: #444;
+            }
+            .description{
+                margin-top: 30px;
+                color: #999;
+                
+                
+                p{
+                    text-align: left;
+                    font-size: 18px;
+                    font-weight: 400;
+                     margin-bottom: 20px;
+                }
+                
+            }
+         }
+
+         .container-img{
+           display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            position: relative;
+
+           
+            img{
+               height: 80%;
+               width: 62%;
+                filter: grayscale(20%);
+                border-radius: 5px;
+                
+                
+            }
+        }
+     }   
+       
+}
+
+@media screen and (max-width:1120px) {
+    .container{
+        width: 100% !important;
+        margin: 0 auto !important;  
+    
+    .container-img{        
+         img{
+            height: 80% !important;
+            width: 90% !important;
+             filter: grayscale(20%);
+             border-radius: 5px;
+             
+             
+         }
+     }
+}
+}
+
+@media screen and (max-width:775px) {
+    .about{
+        height: 170vh;
+        padding:20px;
+    .container{
+        display: grid;
+        grid-template-columns: auto !important;
+        height: 100% !important;
+        max-width: 90% !important;
+     
+        .container-content{
+            width: 100% !important;
+            margin:0 !important ;
+
+        }
+    .container-img{     
+        height: 90% !important;
+        width: 70% !important;
+        margin: 0 auto;
+         img{
+            height: 100%;
+            width: 100%;
+             filter: grayscale(20%);
+             border-radius: 5px;
+         }
+     }
+}
+}
+}

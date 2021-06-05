@@ -1,0 +1,254 @@
+.home {
+  height: 100vh;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode:hue;
+
+  .border-container {
+    height: inherit;
+    width: 70%;
+    margin: 0 auto;
+    border: 1px solid #444;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: none;
+
+    .container {
+      padding: 20px 0;
+      position: absolute;
+      transform: translateX(-20%);
+      background-color: black;
+      width: fit-content;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h1 {
+        font-size: 18px;
+        letter-spacing: 1.6px;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        div {
+          margin-left: 5px;
+          height: 1.5px;
+          width: 40px;
+          background-color: white;
+        }
+      }
+      .title {
+        padding: 20px 0;
+        span {
+          font-size: 54px;
+          font-weight: 900;
+          letter-spacing: 1.5px;
+        }
+      }
+      .contact-me-btn {
+        width: fit-content;
+        border: 0.3px solid #444;
+        padding: 10px 35px;
+        font-weight: 600;
+        cursor: pointer;
+        letter-spacing: 1.5px;
+        &:hover {
+          border: 0.3px solid rgb(98, 98, 98);
+          background-color: #444;
+        }
+      }
+    }
+  }
+
+  .main-image-container {
+    position: absolute;
+    top: 20%;
+    right: 50px;
+
+
+    .image-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+      img {
+        filter: grayscale(40%);
+        width: 500px;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .socials {
+    height: 80%;
+    width: fit-content;
+    padding: 0px 20px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    div {
+      width: 2px;
+      height: 300px;
+      background-color: white;
+    }
+
+    a {
+      color: white !important;
+      transition: all 250ms ease;
+    }
+    a:hover {
+      transform: translateY(-10px) scale(1.2) !important;
+    }
+    
+  }
+}
+
+.image-inner:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+
+@media screen and (max-width:1100px){
+  .home{
+    height: 80vh;
+  }
+  .container{
+ 
+    .title {
+      span {
+        font-size: 40px !important;
+      }
+    }
+    
+  }
+
+  .main-image-container {
+    position: absolute;
+    top: 20%;
+    right: 50px;
+
+
+    .image-inner {
+    
+      img {
+        height: 300px;
+        width:fit-content;
+      
+      }
+    }
+  }
+
+  .socials {
+    div {
+   margin-bottom: 20px;
+    }
+  }
+}
+
+
+@media screen and (max-width:940px){
+  .home{
+    height: 80vh;
+  }
+  .container{
+ 
+    .title {
+    
+      span {
+        font-size: 30px !important;
+      }
+    }
+    .contact-me-btn {
+      padding: 5px 17px !important;
+    }
+  }
+
+  .main-image-container {
+    position: absolute;
+    top: 30% !important;
+    right: 30px;
+
+
+    .image-inner {
+    
+      img {
+        height: 200px;
+        width:fit-content;
+      
+      }
+    }
+  }
+
+  }
+
+  @media screen and (max-width:800px){
+    .home{
+      height: 70vh;
+    }
+    .container{
+   
+      .title {
+      
+        span {
+          font-size: 30px !important;
+        }
+      }
+      .contact-me-btn {
+        padding: 5px 17px !important;
+      }
+    }
+  
+    .main-image-container {
+      display: none;
+    }
+  
+    }
+  
+
+    @media screen and (max-width:800px){
+      .home{
+        height: 70vh;
+      }
+      .container{
+        position: absolute;
+        transform: translateX(0%) !important;
+     
+        .title {
+          span {
+            font-size: 50px !important;
+          }
+        }
+      }
+      }
+
+      
+    @media screen and (max-width:366px){
+      .home{
+        height: 70vh;
+      }
+      .container{
+     
+        .title {
+          span {
+            font-size: 40px !important;
+          }
+        }
+      }
+      }
+    
+  
+
