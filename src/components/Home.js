@@ -21,6 +21,7 @@ function Home() {
   let tl = new TimelineLite();
 
   useEffect(() => {
+   
     const imageInner = CSSRulePlugin.getRule(".image-inner:after");
     console.log(imageInner);
 
@@ -36,7 +37,7 @@ function Home() {
         { y: -50, opacity: 0, ease: Power3.easeOut },
         "-=0.9"
       );
-  }, [tl]);
+  }, []);
 
   const handleMouseOver = () => {
     let strip = name.firstElementChild;
