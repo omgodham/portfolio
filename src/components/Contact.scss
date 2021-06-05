@@ -1,0 +1,72 @@
+
+.main{
+    padding: 20px 20px 20px 0px;
+    background-color: black;
+    
+    .about-section{
+
+        display: grid;
+        grid-template-columns:auto auto;
+        background-color: black ; 
+        .container{
+            margin: 0;
+            width: 90% !important;
+            .contact-box{
+                background-color: black;
+            }
+    .actual-form{
+        width: 100% !important;
+        h1{
+            font-weight: 900 !important;
+            font-size: 34px;
+        }
+        form{
+          input,textarea{
+              background-color: #444;
+            border:none;
+            border-radius:0px;
+
+            }
+          input::-webkit-input-placeholder {
+            color:    #fff;
+        }
+        textarea::-webkit-input-placeholder {
+            color:    #fff;
+        }
+        .success-msg{
+            display: none;
+        }
+        button{
+            background-color: #444 !important;
+            color: white;
+            border-radius: 0px;
+            font-weight: 600;
+           &:hover{
+            background-color: rgb(36, 36, 36) !important;
+           } 
+        }
+        }
+    }
+}
+    .right-one-image{
+   
+       iframe{
+           height: 100%;
+           width: 100%;
+       }
+    }
+}
+}
+
+@media screen and (max-width:800px) {
+     .about-section{
+        background-color: black !important;
+        .container {
+      background-color: black;
+         width: 700px !important;
+    }
+        .right-one-image{
+            display: none !important;
+        }
+    }
+}
