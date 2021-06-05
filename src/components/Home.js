@@ -64,9 +64,9 @@ function Home() {
           >
             <span>WEB DEVELOPER</span>
           </div>
-          <div className="contact-me-btn" ref={(el) => (btn = el)}>
+          <a href="#contact" className="contact-me-btn" ref={(el) => (btn = el)}>
             CONTACT ME
-          </div>
+          </a>
         </div>
       </div>
       <div className="main-image-container">

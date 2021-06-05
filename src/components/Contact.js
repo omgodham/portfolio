@@ -95,7 +95,7 @@ const contactForm = () => {
 }
 
   return (
-    <div className="contact" >
+    <div className="contact" id="contact" >
         {contactForm()}
     </div>
   );
