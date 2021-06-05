@@ -1,4 +1,4 @@
-[I'm an inline-style link](https://frosty-torvalds-ff85bf.netlify.app/)
+[Live Demo](https://frosty-torvalds-ff85bf.netlify.app/)
 
 # Screenshots
 
