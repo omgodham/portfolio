@@ -49,6 +49,13 @@ function Projects() {
                   image='\proj2.png'       
               /> 
               <Project 
+                  category='LANDING PAGE'
+                  title='DATA COMPANY INFO'
+                  description='This is the landing page for data company from figma design'               
+                  link='https://omgodham.github.io/'  
+                  image='\proj5.png'       
+              /> 
+              <Project 
                   category='FRONT END-REACT JS'
                   title='TWITTER HOME CLONE'
                   description='This the twitter home-clone with functionality of uploading images'               
