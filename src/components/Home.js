@@ -54,7 +54,7 @@ function Home() {
       <div className="border-container">
         <div className="container">
           <h1 ref={(el) => (name = el)}>
-            I AM OMKAR GODHAM <div></div>
+            I AM VAIBHAV JOGDAND <div></div>
           </h1>
           <div
             className="title"
@@ -76,14 +76,14 @@ function Home() {
       </div>
       <div className="socials">
         <div></div>
-        <a href="https://github.com/omgodham/" ref={(el) => (gitHub = el)}>
+        <a href="https://github.com/VaibhavJogdand" ref={(el) => (gitHub = el)}>
           <GitHubIcon />{" "}
         </a>
-        <a href="https://twitter.com/OmGodham" ref={(el) => (twitter = el)}>
+        <a href="https://twitter.com/vrjogdand708" ref={(el) => (twitter = el)}>
           <TwitterIcon />{" "}
         </a>
         <a
-          href="https://www.instagram.com/gamerboy_omkar/"
+          href="https://www.instagram.com/i.am__vaibhav__/"
           ref={(el) => (instagram = el)}
         >
           <InstagramIcon />{" "}

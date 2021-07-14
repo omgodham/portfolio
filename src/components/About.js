@@ -37,7 +37,7 @@ const handleMouseOut = () => {
           <div className="stripe"></div>
           <div className="description">
             <p>
-              I'm Omkar a Full Stack Web Developer I have been more than a year
+              I'm Vaibhav a Full Stack Web Developer I have been more than a year
               I'm working in this field. The technology I used is MERN which is
               the combination of MongoDB, ExpressJS, ReactJS, and NodeJS.From
               the technologies I used you must have understood how much I love
@@ -51,7 +51,7 @@ const handleMouseOut = () => {
           </div>
         </div>
         <div className="container-img"  data-aos="zoom-in-up"  onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
-          <img src="\image.JPG" alt="omkar"  ref={el => img = el}/>
+          <img src="\passport4.jpg" alt="omkar" ref={el => img = el}/>
         </div>
       </div>
     </div>
