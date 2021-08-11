@@ -14,7 +14,7 @@ function About() {
    
         AOS.init({
           duration:2000,
-          offset:800,
+          offset:600,
           
         });
   
@@ -30,7 +30,7 @@ const handleMouseOut = () => {
 
   return (
     <div className="about">
-      <div className="container">
+      <div className="about-container">
         <div className="container-content" data-aos="fade-right">
           <p>Expert Web Dveloper</p>
           <h1>About Me</h1>

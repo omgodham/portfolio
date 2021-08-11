@@ -1,15 +1,17 @@
 .about{
     padding:40px;
-    height: 100vh;
+    height: 100%;
     color: white;
     background-color: #111;
-
-      .container{
-        display: grid;
-        grid-template-columns: auto auto;
-        width: 80%;
-        margin: 0 auto;   
+   
+      .about-container{
+        display: flex;
+        flex-wrap: wrap;
+       
+        // margin: 0 auto;   
          .container-content{
+            margin-right:20px;
+             flex: 0.7;
             p{
                 font-weight: 700;
             }
@@ -24,8 +26,6 @@
             .description{
                 margin-top: 30px;
                 color: #999;
-                
-                
                 p{
                     text-align: left;
                     font-size: 18px;
@@ -35,73 +35,40 @@
                 
             }
          }
+       
 
          .container-img{
            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-            width: 100%;
-            position: relative;
-
-           
+            flex: 0.3;
+            max-height: 500px;
+            max-width: 450px;
             img{
-               height: 80%;
-               width: 62%;
+               height: 100%;
+                width: 100%;
                 filter: grayscale(20%);
                 border-radius: 5px;
-                
-                
             }
         }
      }   
        
 }
 
-@media screen and (max-width:1120px) {
-    .container{
-        width: 100% !important;
-        margin: 0 auto !important;  
-    
-    .container-img{        
-         img{
-            height: 80% !important;
-            width: 90% !important;
-             filter: grayscale(20%);
-             border-radius: 5px;
-             
-             
-         }
-     }
-}
-}
 
 @media screen and (max-width:775px) {
     .about{
-        height: 170vh;
         padding:20px;
-    .container{
-        display: grid;
-        grid-template-columns: auto !important;
-        height: 100% !important;
-        max-width: 90% !important;
-     
-        .container-content{
-            width: 100% !important;
-            margin:0 !important ;
+    .about-container{  
+        flex-direction: column;
 
-        }
-    .container-img{     
-        height: 90% !important;
-        width: 70% !important;
-        margin: 0 auto;
-         img{
+        .container-img{
             height: 100%;
-            width: 100%;
-             filter: grayscale(20%);
-             border-radius: 5px;
-         }
-     }
+            max-width: 250px;
+            margin: auto;
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
 }
 }
 }
