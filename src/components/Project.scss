@@ -5,12 +5,11 @@
   justify-content: center;
   padding: 50px;
   height: 100%;
-    h1{
-      text-align: center;
-      font-weight: 700;
-    }
+  h1 {
+    text-align: center;
+    font-weight: 700;
+  }
   .project {
-   
     margin: 20px 0 !important;
     border-radius: 20px;
     padding: 20px;
@@ -43,7 +42,7 @@
       }
       a {
         text-decoration: none;
-        color: blue;
+        color: rgb(255, 255, 255);
         padding: 10px 0;
         font-weight: 700;
       }
@@ -59,15 +58,15 @@
         filter: grayscale(30%);
       }
     }
-}
-.project:nth-of-type(even) {
-    .project-content{
-        order: 2;
+  }
+  .project:nth-of-type(even) {
+    .project-content {
+      order: 2;
     }
-}
+  }
 }
 
-@media  screen and (max-width: 780px) {
+@media screen and (max-width: 780px) {
   .projects {
     padding: 10px;
     height: 100%;
@@ -81,21 +80,16 @@
       }
     }
   }
-
 }
 
-
-@media  screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .projects {
     padding: 10px;
     height: 100%;
-    .project{
-
+    .project {
       display: grid;
       grid-template-columns: 1fr;
       grid-gap: 10px !important;
-    
+    }
   }
-}
-
 }

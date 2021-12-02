@@ -1,32 +1,28 @@
-import React,{useEffect , useRef} from "react";
+import React, { useEffect, useRef } from "react";
 import "./About.scss";
 import "aos/dist/aos.css";
-import {TweenLite , TimelineLite ,Power3} from 'gsap';
-import AOS from 'aos';
+import { TweenLite, TimelineLite, Power3 } from "gsap";
+import AOS from "aos";
 
 function About() {
-   let img = useRef(null);
-  
-   const tl = new TimelineLite();
-  
-   
-   useEffect(() => {
-   
-        AOS.init({
-          duration:2000,
-          offset:600,
-          
-        });
-  
-    },[]);
+  let img = useRef(null);
 
-const handleMouseOver = () => {
-TweenLite.to(img , 1 , {scale:1.1 ,ease:Power3.ease});
-}
+  const tl = new TimelineLite();
 
-const handleMouseOut = () => {
-    TweenLite.to(img , 1 , {scale:1.0 ,ease:Power3.ease});
-}
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      offset: 600,
+    });
+  }, []);
+
+  const handleMouseOver = () => {
+    TweenLite.to(img, 1, { scale: 1.1, ease: Power3.ease });
+  };
+
+  const handleMouseOut = () => {
+    TweenLite.to(img, 1, { scale: 1.0, ease: Power3.ease });
+  };
 
   return (
     <div className="about">
@@ -37,12 +33,13 @@ const handleMouseOut = () => {
           <div className="stripe"></div>
           <div className="description">
             <p>
-              I'm Omkar a Full Stack Web Developer I have been more than a year
-              I'm working in this field. The technology I used is MERN which is
-              the combination of MongoDB, ExpressJS, ReactJS, and NodeJS.From
-              the technologies I used you must have understood how much I love
+              I'm Omkar a Full Stack Web Developer It has been more than a year
+              I'm working in this field. The technology stack I mostly used is
+              MERN which is the combination of MongoDB, ExpressJS, ReactJS, and
+              NodeJS.From the stack you must have understood how much I love
               JavaScript. I am now very familiar with web development tools. I
-              usually do static websites, web applications, etc.
+              usually do static websites, dynamic websites, web applications,
+              etc.
             </p>
             <p>
               I've completed some projects related to the MERN stack, still
@@ -50,8 +47,13 @@ const handleMouseOut = () => {
             </p>
           </div>
         </div>
-        <div className="container-img"  data-aos="zoom-in-up"  onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
-          <img src="\image.JPG" alt="omkar"  ref={el => img = el}/>
+        <div
+          className="container-img"
+          data-aos="zoom-in-up"
+          onMouseOver={handleMouseOver}
+          onMouseOut={handleMouseOut}
+        >
+          <img src="\image.JPG" alt="omkar" ref={(el) => (img = el)} />
         </div>
       </div>
     </div>
